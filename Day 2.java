@@ -41,7 +41,31 @@ public class Main
                 b = temp;
                 System.out.println(b);
             }
+        //Armstrong number
+        int n = sc.nextInt();
 
+        int c = 0; 
+        int result = 0; 
+        int temp = n; 
+
+        while (temp != 0) {
+            temp /= 10; 
+            c++;
+        }
+
+        int org = n;
+
+        while (org != 0) {
+            int l = org % 10; 
+            result += Math.pow(l, c); 
+            org /= 10; 
+        }
+
+        if (result == n) {
+            System.out.print("Armstrong Number");
+        } else {
+            System.out.print("Not an Armstrong Number");
+        }
     
 	}
 }
