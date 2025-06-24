@@ -66,6 +66,131 @@ public class Main
         } else {
             System.out.print("Not an Armstrong Number");
         }
-    
+		// Rectangle Star pattern
+         int n=sc.nextInt();
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            System.out.print("*");
+        }
+        System.out.println();
+    }
+    // star pattern
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+		
 	}
+}
+
+// Array 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    
+		}
+		// for each
+		for(int i:a){
+		    System.out.println(i);
+		}
+        
+    }
+        
+}
+// Maximum element in the array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    
+		}
+		int max=a[0];
+		for(int i=0;i<n;i++){
+		    if(a[i]>max){
+		        max=a[i];
+		    }
+		}
+		System.out.print(max);
+        
+    }
+        
+}
+
+//sum of the element
+	        int sum=0;
+		for(int i=0;i<n;i++){
+		    sum+=a[i];
+		}
+		System.out.print(sum);
+
+// count number of + and - elemnts in the array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    
+		} 
+        int pos_count=0;
+        int neg_count=0;
+        
+        for( int i=0;i<n;i++){
+            if(a[i]>0){
+                pos_count++;
+            }
+            else{
+                neg_count++;
+            }
+        }
+        System.out.println("Positive count: "+pos_count);
+        System.out.println("Negative count: "+neg_count);
+    }
+        
+}
+// Multidimensional array
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] a=new int[n];
+		for(int i=0;i<n;i++){
+		   a[i]=sc.nextInt();
+		} 
+		// reverse
+		/*for(int i=0;i<n;i++){
+		    System.out.print(a[n-i-1]+" ");
+		}*/
+		// swapp the array
+		for(int i=0;i<n/2;i++){
+		        int temp=a[i];
+		        a[i]=a[n-1-i];
+		        a[n-1-i]=temp;
+		        
+		}
+		for(int i=0;i<n;i++){
+		    System.out.print(a[i]+" ");
+		}
+		
+        
+    }  
 }
