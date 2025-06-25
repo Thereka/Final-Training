@@ -20,6 +20,18 @@ public class Main
 		System.out.println(c);
 	}
 }
+//concat and retatte the string
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        String s1 = "waterbottle";
+        String s2 = "erbottlewat";
+        String s3 = s1.concat(s1); 
+        boolean res = s3.contains(s2); 
+        System.out.println(res); 
+    }
+}
 
 //sunstring
 import java.util.*;
