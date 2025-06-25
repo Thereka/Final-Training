@@ -229,3 +229,31 @@ public class Main
 		
 	}
 }
+//first repeat character
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        String a = "waterbottle";
+        int n = a.length();
+        char ch[] = a.toCharArray();
+        boolean found = false;
+
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (ch[i] == ch[j]) {
+                    System.out.println("First repeating character: " + ch[i]);
+                    found = true;
+                    break;
+                }
+            }
+            if (found) {
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No repeating character found.");
+        }
+    }
+}
