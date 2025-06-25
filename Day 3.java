@@ -168,3 +168,52 @@ public class Main {
     }
 }
 
+//or
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String c = sc.nextLine();
+        int n = c.length();
+        char[] a = c.toCharArray();
+        int flag = 0;
+        for (int i = 0; i < n / 2; i++) {
+            
+                if (a[i] != a[n-1-i]) {
+                    flag = 1;
+                    break;
+
+                
+            }
+        }
+        if (flag == 0) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not a Palindrome");
+        }
+    }
+}
+// count vowel and constant
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String c=sc.nextLine();
+		int n=c.length();
+		char []a=c.toCharArray();
+		int vow_c=0;
+		int con_c=0;
+		for(int i=0;i<n;i++){
+		   if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'){
+		       vow_c++;
+		   }
+		   else{
+		       con_c++;
+		   }
+		}
+		System.out.println("Vowel count "+vow_c);
+		System.out.println("Constant count "+con_c);
+		
+	}
+}
